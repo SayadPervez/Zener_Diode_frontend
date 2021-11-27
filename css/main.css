@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    padding: 0.7rem 7rem;
+    margin:0;
+    color: black;
+    font-family: 'Urbanist', sans-serif;
+    position: relative;
+    top:2rem;
+}
