@@ -1,3 +1,3 @@
 # Zener Diode
 
-## Current Status : ![5%](https://progress-bar.dev/5/)
+## Current Status : ![7%](https://progress-bar.dev/7/)

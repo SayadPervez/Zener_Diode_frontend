@@ -8,10 +8,13 @@ body {
 }
 
 .title {
-    padding: 0.7rem 7rem;
+    padding: 4rem 2.13rem 2.13rem 7rem;
     margin:0;
     color: black;
     font-family: 'Urbanist', sans-serif;
-    position: relative;
-    top:2rem;
+}
+
+canvas{
+    border: 1px solid red;
+    margin:1rem 7rem;
 }
