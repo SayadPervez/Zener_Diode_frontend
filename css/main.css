@@ -14,7 +14,9 @@ body {
     font-family: 'Urbanist', sans-serif;
 }
 
-canvas{
-    border: 1px solid red;
+#canvasContainer{
+    border:2px solid red;
     margin:1rem 7rem;
+    width:max-content;
+    height: fit-content;
 }
