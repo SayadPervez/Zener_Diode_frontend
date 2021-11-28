@@ -36,7 +36,7 @@ function drawPoint(p,color="black",size = 3.0) {
     ctx.closePath();
 }
 
-function drawLine(p, q, color="black",size=1) {
+function drawLine(p, q, color="black",size=2) {
     // Draws a line from p to q
     ctx.beginPath();
     ctx.lineWidth = size;
@@ -54,12 +54,37 @@ function canvaWrite(text,p,color="black",font="20px Urbanist") {
     ctx.fillText(text, p.x, p.y);
 }
 
+function diodeZener(p) {
+    // Zener Diode Component
+    var px = p.x; var py = p.y;
+    var A = p;
+    var B = pt(px,py+35);
+    var XX = pt(B.x-20,B.y);
+    var X = pt(XX.x-10,XX.y+10);
+    var YY = pt(B.x+20,B.y);
+    var Y = pt(YY.x+10,YY.y-10);
+    var D = pt(p.x,p.y+65);
+    var C = pt(D.x-20,D.y);
+    var E = pt(D.x+20,D.y);
+    var F = pt(p.x,p.y+100);
+    // Plotting
+    drawLine(A,B);
+    drawLine(B,C);
+    drawLine(B,E);
+    drawLine(C,E);
+    drawLine(D,F);
+    drawLine(B,XX);
+    drawLine(XX,X);
+    drawLine(B,YY);
+    drawLine(YY,Y);
+    drawPoint(A,"#e65100");
+    drawPoint(F,"#e65100");
+}
+
 function draw() {
     // All subplots are done here...
     // Do not delete !!!
-    drawLine(pt(100,100),pt(400,400));
-    drawPoint(pt(200,200));
-    canvaWrite("Initial setups completed !",pt(210,205),"red");
+    diodeZener(pt(100,100));
 }
 
 function draw_____() {
